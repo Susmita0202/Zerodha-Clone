@@ -59,13 +59,12 @@ router.post("/login", async (req, res) => {
     );
 
     // ✅ SET COOKIE (THIS IS THE KEY)
-    res.cookie("token", token, {
-  httpOnly: false,        // keep false for now
-  secure: false,          // localhost only
-  sameSite: "lax",
-  domain: "localhost",   // ⭐ THIS IS THE KEY
-  path: "/",              // ⭐ allow all routes
+   res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,
+  sameSite: "none",
 });
+
 
 
     res.json({
@@ -87,9 +86,11 @@ router.post("/login", async (req, res) => {
 ========================= */
 router.post("/logout", (req, res) => {
   res.clearCookie("token", {
-    httpOnly: true,
-    sameSite: "lax",
-  });
+  httpOnly: true,
+  secure: true,
+  sameSite: "none",
+});
+
   res.status(200).json({ message: "Logged out" });
 });
 
