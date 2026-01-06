@@ -22,7 +22,7 @@ const Menu = () => {
     }
 
     localStorage.removeItem("token");
-    window.location.href = "http://localhost:3000";
+    window.location.href = "https://zerodha-clone-frontend-ctuv.onrender.com";
   };
 
   // ✅ CLOSE DROPDOWN WHEN CLICKING OUTSIDE
