@@ -13,7 +13,7 @@ const Menu = () => {
   // ✅ LOGOUT HANDLER
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:3002/logout", {
+      await fetch("https://zerodha-clone-backend-mwx5.onrender.com/logout", {
         method: "POST",
         credentials: "include",
       });
