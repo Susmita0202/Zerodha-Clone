@@ -5,7 +5,7 @@ const ProtectedRoute = ({ children }) => {
   // loading | allowed | denied
 
   useEffect(() => {
-    fetch("http://localhost:3002/api/auth/me", {
+    fetch("https://zerodha-clone-backend-mwx5.onrender.com/api/auth/me", {
       credentials: "include",
     })
       .then((res) => {
