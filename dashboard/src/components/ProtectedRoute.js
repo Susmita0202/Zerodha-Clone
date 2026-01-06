@@ -25,7 +25,7 @@ const ProtectedRoute = ({ children }) => {
   }
 
   if (status === "denied") {
-    window.location.replace("http://localhost:3000/login");
+    window.location.replace("https://zerodha-clone-frontend-ctuv.onrender.com/login");
     return <div>Redirecting...</div>;
   }
 
