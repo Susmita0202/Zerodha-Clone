@@ -24,7 +24,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["https://zerodha-clone-frontend-ctuv.onrender.com", "http://localhost:3001"],
+    origin: ["https://zerodha-clone-frontend-ctuv.onrender.com", "https://zerodha-clone-dashboard-bv3u.onrender.com"],
     credentials: true,
   })
 );
