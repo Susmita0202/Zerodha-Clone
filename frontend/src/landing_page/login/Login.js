@@ -32,7 +32,7 @@ const Login = () => {
       }
 
       // ✅ REDIRECT TO DASHBOARD APP
-      window.location.href = "http://localhost:3001";
+      window.location.href = "https://zerodha-clone-dashboard-bv3u.onrender.com";
 
     } catch (error) {
       alert("Server not reachable");
