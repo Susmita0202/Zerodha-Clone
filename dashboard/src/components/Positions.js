@@ -9,7 +9,7 @@ const Positions = () => {
 
   useEffect(() => {
   axios
-    .get("http://localhost:3002/addPositions", { withCredentials: true })
+    .get("https://zerodha-clone-backend-mwx5.onrender.com/addPositions", { withCredentials: true })
     .then((res) => setAddPositions(res.data));
 }, []);
 
